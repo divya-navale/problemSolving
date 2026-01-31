@@ -123,6 +123,7 @@ public class DataStructures {
         System.out.println("Value for key 2: " + hashMap.get(2));
         System.out.println("HashMap contains key 2: " + hashMap.containsKey(2));
         System.out.println("HashMap contains 10: " + hashMap.containsValue(10));
+        hashMap.put(num, hashMap.getOrDefault(num, 0) + 1);
         hashMap.isEmpty();
         Set<Integer> keys = hashMap.keySet(); // Get all keys
         List<Integer> values = new ArrayList<>(hashMap.values()); // Get all values
