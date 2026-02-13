@@ -171,4 +171,14 @@ public class DataStructures {
     void addEdge(int src, int dest) {
         adjList[src].add(dest); // Add directed edge
     }
+
+    class TrieNode {
+        TrieNode[] children;
+        boolean isEndOfWord;
+
+        TrieNode() {
+            children = new TrieNode[26]; // Assuming only lowercase letters
+            isEndOfWord = false;
+        }
+    }
 }
